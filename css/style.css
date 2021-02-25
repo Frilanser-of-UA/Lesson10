@@ -140,8 +140,8 @@ margin: -15px 10px -15px 0px;
 	border: 1px solid #A3A3A3;
 }
 .header__search .input:focus{
-	color: black;
-	background-color: white;
+	color: #FFFFFF;
+	
 }
 .input:focus, .input-input:focus{
 	outline: none;
@@ -247,7 +247,6 @@ body h2{
 .checkbox__input {
 	width: 0;
 	height: 0;
-	visibility: hidden;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -271,6 +270,9 @@ body h2{
 }
 .checkbox__input:checked + .checkbox__label::before{
 	background:#fff url("../img/dot.png") center / 12px no-repeat;
+}
+.checkbox__input:focus + .checkbox__label::before{
+box-shadow: 1px 2px 1px red;
 }
 .form__checkbox a{
 	color: #64B369;
